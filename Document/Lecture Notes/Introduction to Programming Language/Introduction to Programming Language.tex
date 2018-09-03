@@ -1,0 +1,484 @@
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+\documentclass{beamer}
+
+% There are many different themes available for Beamer. A comprehensive
+% list with examples is given here:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+% You can uncomment the themes below if you would like to use a different
+% one:
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{boxes}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{default}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+\usepackage{kotex}
+\usepackage{braket}
+\usepackage{array}
+\usepackage{calc}
+\usepackage{datetime}
+
+
+\graphicspath{{images/}}
+\usepackage{listings}
+
+\usepackage{kotex} 
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Python,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+
+\lstdefinestyle{python}{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4
+}
+
+
+\title{Introduction to Python and Programming Language}
+
+% A subtitle is optional and this may be deleted
+\subtitle{Koscom Algorithm Lecture}
+
+\author{신승우}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+% \institute[Universities of Somewhere and Elsewhere] % (optional, but mostly needed)
+% {
+  % \inst{1}%
+  % Department of Computer Science\\
+  % University of Somewhere
+  % \and
+  % \inst{2}%
+  % Department of Theoretical Philosophy\\
+  % University of Elsewhere}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+\subject{Theoretical Computer Science}
+
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each section:
+
+
+% \AtBeginSection[]
+% {
+  % \begin{frame}[fragile]<beamer>{Outline}
+    % \tableofcontents[currentsection,hideallsections]
+  % \end{frame}
+% }
+
+% Let's get started
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Section and sections will appear in the presentation overview
+% and table of contents.
+
+% \begin{frame}[fragile][fragile]{hello.py}
+% 이제는 위에서 했던 것과 거의 비슷한 것을 할 텐데, 다만 다른 방식으로 해 볼 것입니다. 화면에서 보이는 대로 따라하세요. 
+% \begin{lstlisting}[language=Python]
+% print('Hello World!')
+% \end{lstlisting}
+% \end{frame}
+
+\section{Basic Syntax of the Python Language} 
+
+\subsection{Basic Syntax} 
+
+\begin{frame}[fragile]{Hello World!}
+\begin{lstlisting}[language=Python]
+print('Hello World!')
+\end{lstlisting}
+
+세미콜론이 없음에 주의해주세요. C나 자바와는 다르게 세미콜론이 없습니다. 
+\end{frame}
+
+\begin{frame}{Indentation}
+파이썬 언어는 다른 언어에서의 괄호를 indent로 대신합니다. 표준적으로, 인덴트는 space 4개로 하며, 이를 위해서 대부분의 개발 도구에서는 tab을 space 4개로 대체하여 사용합니다. 만약 인터넷이나 다른 곳에서 소스를 사용할 때 indentation 관련 에러가 난다면, tab/space 여부를 체크해보세요. 
+
+\end{frame}
+
+\begin{frame}[fragile]{= vs == vs is}
+\begin{lstlisting}[language=Python]
+a = 1
+a == 1 
+a is 1 # True or False?
+\end{lstlisting}
+
+\begin{itemize} 
+\item = : assignment 
+\item == : equality check
+\item is : address check 
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{if-elif-else}
+if-elif-else 구문에서는 항상 indent를 유지해야 합니다. 
+\begin{lstlisting}[language=Python]
+if cond1:
+    .... # when cond1 is True
+elif cond2:    
+    .... # when cond1 is False and cond2 is True 
+else:
+    .... # when cond1 and cond2 is False
+\end{lstlisting}
+
+\end{frame}
+
+
+\begin{frame}[fragile]{while}
+\begin{lstlisting}[language=Python]
+while(cond):
+    ....  # while cond remains True
+\end{lstlisting}
+
+다른 대부분의 언어들과 비슷하게, break문을 통해서 벗어날 수 있습니다. 
+\end{frame}
+
+\begin{frame}[fragile]{for loop}
+\begin{lstlisting}[language=Python]
+for i in range(10):
+    ....
+\end{lstlisting}
+
+문법은 for *1 in *2: 형태를 취하며, 이 때 
+\begin{itemize}
+\item *1 변수에 *2에 있는 원소를 \textit{차례로} 대입하며, 
+\item indent로 명시된 코드블럭 내 구문을 수행합니다. 
+\end{itemize}
+
+즉, *2에 있는 부분은 순서가 있는 자료형이여야 합니다. 이에 대해서는 조금 후에 더 자세하게 다루겠습니다. 
+
+\end{frame}
+
+\begin{frame}[fragile]{switch}
+파이썬에서는 switch문을 지원하지 않습니다. 하지만, 비슷하게 만드는 방법이 있습니다. 이에 대해서는 파이썬 사전을 배운 후 다루겠습니다. 
+\end{frame}
+
+\begin{frame}[fragile]{assert}
+\begin{lstlisting}[language=Python]
+assert False
+assert cond, ...
+\end{lstlisting}
+\end{frame}
+
+\subsection{Primitive Types and Supported Methods} 
+
+\begin{frame}[fragile]{Boolean}
+
+많은 다른 언어에서 나오는 Boolean과 같으며, 다음의 operation들을 지원합니다. 
+\lstinputlisting[style=python, 
+                caption={Boolean Example  (example\_bool1.py)}]{"../../Reference/examples/example_bool1.py"}
+
+\end{frame}
+
+\begin{frame}[fragile]{Numeric}
+\lstinputlisting[style=python, 
+                caption={Numeric Types  (example\_numeric1.py)}]{"../../Reference/examples/example_numeric1.py"}
+\end{frame}
+
+\begin{frame}[fragile]{list}
+list 데이터형은 다음의 연산들을 지원합니다. 
+\begin{itemize} 
+\item a in d : 배열(d) 안에 특정 원소(a)가 있는지를 검사합니다. 
+\item + : 배열 두 개를 이어서 새로운 배열을 만듭니다. 같은 데이터형이여야 합니다. 
+\item d[i] : d의 i번째 원소를 반환합니다. 
+\item d[i:j:k] : d의 i번째 원소부터 j번째 원소까지, k번째 원소마다 선택하여 리스트를 만들어 반환합니다. 
+\item d.index(elem) : d에서 elem 이 처음으로 나오는 위치를 반환합니다. 
+\item d.append(elem) : elem을 d 맨 뒤에 추가합니다. 
+\end{itemize}
+
+\end{frame}
+\begin{frame}[fragile]{list}
+\lstinputlisting[style=python, 
+                caption={Operations for Sequential Types  (example\_sequence2.py)}]{"../../Reference/examples/example_sequence2.py"}
+
+\end{frame}
+
+\begin{frame}[fragile]{list vs iterator}
+\end{frame}
+
+% \begin{frame}[fragile]{String}
+% \end{frame}
+
+\begin{frame}[fragile]{Dictionary}
+\begin{itemize} 
+\item d[key] : dict에서 key에 해당되는 value를 반환합니다. 
+\item d[key] = val : dict에서 key에 해당되는 value를 val로 업데이트합니다. 
+\item d.keys() : dict의 key들을 반환합니다. 
+\end{itemize}
+
+\lstinputlisting[style=python, 
+                caption={Operations for Mapping Types  (example\_dict2.py)}]{"../../Reference/examples/example_dict2.py"}
+
+\end{frame}
+
+\subsection{Functions}
+
+\begin{frame}[fragile]{Function Definition Syntax}
+\begin{lstlisting}[language=Python]
+def function_name(function_arguments):
+    ...
+\end{lstlisting}
+
+\begin{itemize} 
+\item def : 함수 정의 키워드입니다. 
+\item function : 함수 이름을 나타냅니다. 
+\item args : 함수 인자입니다. 아래와 같은 옵션이 있습니다. 
+\begin{itemize} 
+\item arg 
+\item arg\_default : 함수 인자의 기본값을 정해줄 때, =을 이용하여 기본값을 지정해줄 수 있습니다. 
+\item *arg\_list : 정해지지 않은 수의 인자를 받고자 할 때, *을 하나 붙여서 들어온 인자를 배열로 받을 수 있습니다. 
+\item **arg\_dict : 정해지지 않은 수의 이름이 명시된 인자를 받고자 할 때, *를 두개 붙여서 들어온 인자들을 dict 형태로 받을 수 있습니다. 
+\end{itemize} 
+\item return None : 함수의 결과값으로 return 뒤의 구문을 반환합니다. 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{실습 : sorting a list}
+정수의 리스트가 주어졌을 때, 이를 크기순으로 배열한 리스트를 반환하는 함수 sort\_list를 작성하세요. 
+\end{frame}
+
+\begin{frame}[fragile]{Lambda Function}
+\lstinputlisting[style=python,  
+                caption={Lambda Function Example (example\_lambda1.py)}]{"../../Reference/examples/example_lambda1.py"}
+
+파이썬에서는 익명함수(lambda function)을 지원합니다. 이 때 구문은 다음과 같습니다. 
+\begin{itemize} 
+\item lambda : 람다함수 키워드. 람다함수 뒤의 구문 중 콜론 전에 있는 구문은 함수의 인자를, 뒤는 반환하는 값을 나타낸다. 
+\item x,y,z(func3)/*args(func4) : 람다함수의 인자. 쉼표로 구분되며, 상기된 *args등도 똑같이 사용 가능함을 func4에서 확인할 수 있다. 
+\item x+y+z(func3)/sum(args)(func4) : 람다함수의 반환값. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Functional Python : Function as a First-Class Citizen}
+파이썬에서 함수는 다른 객체와 똑같이 취급됩니다. 즉, 
+\begin{itemize} 
+\item 다른 함수에 인자로 넘길 수 있으며, \footnote{합성함수와는 다릅니다!}
+\item 함수의 반환값이 될 수 있고, 
+\item 변수에 저장될 수 있습니다. 
+\end{itemize}
+
+이는 자바나 C에서는 없는 특성이기 때문에, 예시를 들어서 살펴보도록 하겠습니다. 
+\end{frame}
+
+\begin{frame}{실습 : sorting a list using custom key} 
+이번에는 정수의 리스트를, 정수를 4로 나눈 나머지를 기준으로 배열해보겠습니다. 
+\end{frame}
+
+% \begin{frame}[fragile]{Map, Reduce, Filter}
+% \end{frame}
+
+\subsection{Classes} 
+
+\begin{frame}[fragile]{Class Syntax}
+
+\lstinputlisting[style=python,  
+		linerange = {1-15},
+                caption={Making a MyString Class  (example\_class2.py)}]{"../../Reference/examples/example_class2.py"}
+Reference/examples/example\_class2.py 파일을 참고하세요. 
+\end{frame}
+\begin{frame}
+위 코드에서 파이썬 클래스의 각 요소들을 설명하면 다음과 같습니다. 
+\begin{itemize} 
+\item class : 클래스를 정의하는 키워드입니다. 이 키워드 뒤의 단어가 클래스의 이름이 됩니다. 여기서는 MyString입니다. 
+\item maker = 'Schin' : 클래스의 \textbf{속성}을 지정합니다. 여기서는 class\_name, maker, datum의 3개의 속성이 있습니다. 편의상 datum을 우리가 다루고자 하는 문자열로 생각하겠습니다. 
+\item a = MyString : a라는 변수의 값으로 MyString이라는 \textbf{클래스}를 지정합니다. 
+\item b = MyString() : b라는 변수의 값으로 MyString이라는 \textbf{인스턴스}를 지정합니다. 
+\end{itemize}
+\end{frame}
+
+% \begin{frame}[fragile]{Defining and Using Methods}
+% \begin{lstlisting}[language=Python]
+% a = MyString('123')
+% a.
+% \end{lstlisting}
+% \end{frame}
+
+\begin{frame}[fragile]{Syntactic Sugar : Magic Methods}
+2 by 2 행렬 클래스를 만들어 봅시다. 이 때, 클래스의 두 인스턴스를 더하거나 빼는 메소드를 만들어 봅시다. 
+
+파이썬에서는 더하기, 빼기 등의 자주 쓰이는 operation들을 우리가 만든 클래스에서 편하게 커스터마이징하는 방법을 제공합니다. 이를 magic method라고 합니다. 많이 쓰이는 magic method와 대응되는 파이썬 문법은 다음과 같습니다. 
+
+\begin{itemize} 
+\item \_\_cmp\_\_ : 대소비교할 때 쓰입니다. 
+\item \_\_eq\_\_ : == 에서 쓰입니다.
+\item \_\_add\_\_, \_\_sub\_\_, \_\_mul\_\_, \_\_div\_\_ : 사칙연산 
+\item \_\_iter\_\_ : 인스턴스가 여러 값을 포함하고 있을 경우, 그 값들을 traverse 할 수 있도록 합니다. a in b에서 쓰입니다. 
+\item \_\_str\_\_ : str(a)에서 쓰입니다.
+\end{itemize}
+\end{frame}
+
+\section{Understanding the Python Interpreter}
+
+\subsection{Concept of Namespace and Substitution} 
+
+\begin{frame}[allowframebreaks]{Variables}
+위 질문에 답하기 위해서는 먼저 변수의 bind-bound와 Namespace의 개념에 대해서 알아야 합니다. 일반적으로 변수에는 3가지 종류가 있습니다. 
+
+\begin{itemize} 
+\item Bound variable : 어떤 값이나 다른 변수에 의해서 값이 결정되는지 정해진 변수
+\item Binding variable : Bound variable의 값을 결정하는 변수 
+\item Free variable : Bound되지 않은 변수 
+\end{itemize}
+
+Namespace란 variable과 값의 bind-bound를 나타내는 구조입니다. 여기에 없는 variable에 대한 접근은 NameError을 반환합니다. 
+\end{frame}
+
+\begin{frame}[fragile]{To Bind a Variable}
+파이썬에서 Variable을 bind하기 위해서는 
+
+\begin{itemize} 
+\item =을 이용한 assignment 
+\item class/function 이름
+\item 루프에서 루프 카운터의 bind
+\item 함수 argument 
+\end{itemize}
+
+등\footnote{이 외에는 try-except나 with 구문이 있습니다.}이 있습니다. 
+
+\end{frame}
+
+\begin{frame}[fragile]{Loading Namespaces}
+
+다른 코드 블럭의 Namespace를 가져오기 위해서는 2 가지 방법이 있습니다. 
+\begin{itemize} 
+\item .의 이용 : AAA.bb는 AAA 코드 블럭 내에서 bind된 bb를 찾는 구문입니다. 
+\item from ... import * : ... 모듈이나 파일 안에서 정의된 모든 name을 bind합니다. 
+\item Syntactic Sugar : a.some\_method()는 a의 클래스 정의부 내에서 bind된 some\_method를 찾습니다. 즉, 이는 A.some\_method(a)와 같습니다. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Explicit Checking of Namespace : locals()}
+locals() 함수를 사용하여 특정 시점에서의 namespace를 체크할 수 있습니다. 어떠한 종류의 디버거던 사용해 보신 분들은 익숙한 개념일 것입니다. 
+\end{frame}
+
+\subsection{Interpreting Python Code} 
+
+\begin{frame}[fragile]{Execution Flow of the Interpreter}
+파이썬 코드는 인덴트로 구분된 코드 블럭 단위로 실행됩니다. 한 코드 블럭 안에서는 Flow Control 구문이 있을 시 그 구문을 따르고, 그렇지 않으면 라인 하나하나씩 실행됩니다. 
+
+라인 중 =가 있는 라인과 없는 라인은 다르게 작동합니다. =가 있는 라인은, =의 왼쪽에는 variable, 오른쪽에는 expression이 있습니다. expression은 계산 가능한 코드나, 기존에 값이 assign된 변수입니다. 없는 라인은 기존에 assign된 변수의 값을 변화시키거나, 다른 함수를 실행합니다. 
+
+그렇다면, expression의 계산이나 함수의 실행은 어떻게 이루어질까요?
+\end{frame}
+
+
+\begin{frame}[fragile]{Substitution}
+파이썬 인터프리터는 단순합니다. 그 시점에서의 Namespace에서 variable을 찾고, 찾지 못할 경우 NameError를 리턴합니다. 만약 찾을 수 있는 경우, 그 코드의 해당 부분을 namespace에서 찾은 값으로 바꿔쓰기하여 계산을 다시 수행합니다. 
+\end{frame}
+
+\begin{frame}[fragile]{Example on Sorting}
+위에서 custom key를 가진 sorting함수를 다시 살펴보며 어떤 식으로 bind-bound가 이루어지는지 살펴보겠습니다. 
+\end{frame}
+
+
+\end{document}
+
+

@@ -1,0 +1,234 @@
+\documentclass[11pt, a4paper]{article}
+%\usepackage{geometry}
+\usepackage[inner=2.5cm,outer=2.5cm,top=2.5cm,bottom=2.5cm, textwidth=5cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{MAS101} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{\today} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE] {page \thepage\ of \pageref{LastPage} }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{kotex}
+\usepackage{amsthm}
+\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+
+
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{lightlightgray}{gray}{0.93}
+
+
+
+\lstset{
+%language=bash,                          % Code langugage
+basicstyle=\ttfamily,                   % Code font, Examples: \footnotesize, \ttfamily
+keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
+commentstyle=\color{gray},              % Comments font
+numbers=left,                           % Line nums position
+numberstyle=\tiny,                      % Line\itemnumbers fonts
+stepnumber=1,                           % Step between two line\itemnumbers
+numbersep=5pt,                          % How far are line\itemnumbers from code
+backgroundcolor=\color{lightlightgray}, % Choose background color
+frame=none,                             % A frame around the code
+tabsize=2,                              % Default tab size
+captionpos=t,                           % Caption\itemposition = bottom
+breaklines=true,                        % Automatic line breaking?
+breakatwhitespace=false,                % Automatic breaks only at whitespace?
+showspaces=false,                       % Dont make spaces visible
+showtabs=false,                         % Dont make tabls visible
+columns=flexible,                       % Column format
+morekeywords={__global__, __device__},  % CUDA specific keywords
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{center}
+{\Large \textsc{Review on Algorithms and Data Structures}}
+\end{center}
+\begin{center}
+\today
+\end{center}
+%\date{September 26, 2014}
+
+\begin{center}
+\rule{6in}{0.4pt}
+\begin{minipage}[t]{.75\textwidth}
+\begin{tabular}{llcccll}
+\textbf{Lecturer:} & Seungwoo Schin & & &  & \textbf{Time:} & TBA \\
+\textbf{Email:} &  \href{mailto:principia_12@kaist.ac.kr}{principia\_12@kaist.ac.kr} & & & & \textbf{Place:} & TBA
+\end{tabular}
+\end{minipage}
+\rule{6in}{0.4pt}
+\end{center}
+\vspace{.5cm}
+\setlength{\unitlength}{1in}
+\renewcommand{\arraystretch}{2}
+
+
+\noindent\textbf{Study Objectives} 데이터구조와 알고리즘을 복습하고 구현하며, 이를 이용하여 ICPC 등의 기출문제를 포함한 종합적인 문제를 풀어본다. 
+
+
+\vskip.15in
+\noindent\textbf{Target Audience} 
+\begin{itemize}
+\item 대학교 전공자 수준의 알고리즘 지식을 복습하고 싶으신 분 
+\end{itemize}
+
+
+\vskip.15in
+\noindent\textbf{Things to Learn} 
+\begin{itemize}
+\item 데이터구조의 개념과 구현법
+\item 그래프, 트리 등 데이터구조의 operation들의 이해와 분석  
+\item ICPC 등 경시대회 문제 및 복합적인 문제 풀이 
+\end{itemize}
+
+\vskip.15in
+\noindent\textbf{Policy} 
+\begin{itemize} 
+\item 앞에서 구현한 코드를 이용하여 문제풀이에서 활용할 예정입니다. 
+\item 실습 코드는 개설될 Github Repository에 커밋하여 공유하게 할 예정입니다. 
+\item 실습을 하는 것이 의무는 아니지만, 가능하면 실습 문제를 해결해볼 것을 권장드립니다. 
+\end{itemize}
+
+
+\vskip.15in
+\noindent\textbf{Prerequisite} : 프로그래밍 경험과 고등학교 수준의 수학 지식을 가지고 있어야 합니다. 또, 가능하면 git을 사용할 줄 알면 좋습니다. 수업 전에 파이썬을 설치하고 오시기를 권장드립니다. 
+
+\newpage
+
+\noindent \textbf{Tentative Course Outline}
+\begin{center} 
+\begin{flushleft}
+\begin{itemize}
+
+\item Week 0(before class) : Environment Settings
+
+\begin{itemize}
+\item Python 개발 환경 설치 
+\item Github에서 Template 코드 클론받고 버젼관리 설치 
+\end{itemize}
+
+\item Day 1 : 파이썬 기초 및 시간복잡도 / ADT와 데이터구조
+
+\begin{itemize} 
+\item 파이썬 문법 
+\begin{itemize}
+\item Hello World! 
+\item 파이썬 자료형 : numeric, set, iterables, map
+\item 파이썬 기본 문법 : loops, conditionals, functions, class
+\item Argument Passing in Python 
+\end{itemize} 
+\item 복잡도 
+\begin{itemize} 
+\item Big O notation
+\item Computation Model : Turing Machine
+\item Computational Complexity Classes 
+\end{itemize} 
+\item 데이터구조와 ADT 
+\begin{itemize} 
+\item 데이터구조 vs ADT 
+\item Union-find를 통한 ADT와 데이터구조의 차이 예제 
+\end{itemize}
+\item 리스트 ADT의 구현 
+\item 큐와 스택 ADT의 구현 
+\begin{itemize}
+\item queue/stack adt
+\item  linked list를 이용한 스택과 큐의 구현 
+\item  priority queue 
+\end{itemize} 
+\end{itemize}
+
+
+\item Day 2 : 데이터구조 더 살펴보기 / 알고리즘 살펴보기 
+
+\begin{itemize} 
+
+\item 트리 
+\begin{itemize} 
+ \item tree adt
+\item binary tree : implementation 
+\item balanced binary tree : implementation 
+\end{itemize} 
+\item 그래프 
+\begin{itemize} 
+\item graph adt 
+\item graph implementation 
+\item dfs/bfs 
+\end{itemize}
+
+\item Warm Up : Sorting 
+\begin{itemize} 
+\item $n^2$ sort : insertion sort / bubble sort 
+\item $n log n$ sort : quicksort / merge sort 
+\item optimizing/analyzing sort 
+\end{itemize}
+
+\item Dynamic Programming 
+\begin{itemize} 
+\item LCS/LIS
+\item edit distance
+\item subset sum problem 
+\end{itemize}
+
+\end{itemize}
+
+
+
+\item Day 3 : 다양한 그래프 알고리즘 / 문제 풀이 
+
+\begin{itemize} 
+\item 그래프 알고리즘 
+\begin{itemize}
+\item Graph Traversal : BFS / DFS / Topological Sort
+\item Shortest Path to all nodes from Source : Dijkstra / Bellman Ford 
+\item Shortest Path between all nodes : Floyd Warshall / Johnson
+\item Minimum Spanning Tree : Prim / Kruskal 
+\end{itemize} 
+\item 경시대회 기출문제 풀이  
+\begin{itemize} 
+\item Recursion  
+\item Dynamic Programming : Using nd array / tree / graph
+\end{itemize} 
+\end{itemize}
+\item More Problems 
+\begin{itemize} 
+\item Sequence Labeling : Viterbi Algorithm 
+\item Parsing : Formal Grammar, Regular Expression
+\end{itemize}
+
+\end{itemize}
+\end{flushleft}
+\end{center}
+
+
+
+
+
+%%%%%% THE END 
+\end{document} 

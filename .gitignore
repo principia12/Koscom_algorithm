@@ -1,0 +1,15 @@
+Src/
+
+__pycache__/
+*.pyc
+
+*.swp
+
+*.vrb
+*.log 
+*.aux
+*.nav
+*.snm
+*.toc
+*.out
+*.txt

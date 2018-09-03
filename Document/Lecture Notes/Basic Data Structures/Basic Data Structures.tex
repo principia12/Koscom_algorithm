@@ -1,0 +1,329 @@
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+\documentclass{beamer}
+
+% There are many different themes available for Beamer. A comprehensive
+% list with examples is given here:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+% You can uncomment the themes below if you would like to use a different
+% one:
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{boxes}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{default}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+\usepackage{kotex}
+\usepackage{braket}
+\usepackage{array}
+\usepackage{calc}
+\usepackage{datetime}
+
+
+\graphicspath{{images/}}
+\usepackage{listings}
+
+\newcommand\fig[2]{
+\begin{figure}[h]
+  \centering
+  \includegraphics[width = \textwidth]{#1}
+  \caption{#2} 
+  \label{fig:#1}
+\end{figure}
+}
+
+\usepackage{kotex} 
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Python,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+
+\lstdefinestyle{python}{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4
+}
+
+
+\title{Introduction to Python and Programming Language}
+
+% A subtitle is optional and this may be deleted
+\subtitle{Koscom Algorithm Lecture}
+
+\author{신승우}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+% \institute[Universities of Somewhere and Elsewhere] % (optional, but mostly needed)
+% {
+  % \inst{1}%
+  % Department of Computer Science\\
+  % University of Somewhere
+  % \and
+  % \inst{2}%
+  % Department of Theoretical Philosophy\\
+  % University of Elsewhere}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+\subject{Theoretical Computer Science}
+
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each section:
+
+
+% \AtBeginSection[]
+% {
+  % \begin{frame}[fragile]<beamer>{Outline}
+    % \tableofcontents[currentsection,hideallsections]
+  % \end{frame}
+% }
+
+% Let's get started
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Section and sections will appear in the presentation overview
+% and table of contents.
+
+% \begin{frame}[fragile][fragile]{hello.py}
+% 이제는 위에서 했던 것과 거의 비슷한 것을 할 텐데, 다만 다른 방식으로 해 볼 것입니다. 화면에서 보이는 대로 따라하세요. 
+% \begin{lstlisting}[language=Python]
+% print('Hello World!')
+% \end{lstlisting}
+% \end{frame}
+
+\section{List} 
+
+\subsection{Concept of List} 
+\begin{frame}{Recursive Definition of List} 
+
+리스트는 head, tail의 순서쌍이며, head는 임의의 데이터, tail은 다른 리스트를 말합니다. 즉, 리스트의 정의 자체가 이미 재귀적입니다. lisp 같은 언어에서 아주 적극적으로 활용되며, 다른 언어에서도 기본적으로 많이 쓰이는 ADT이자 데이터구조입니다. 
+
+재귀적인 구조를 가진 것은 리스트에 대한 많은 함수가 재귀적으로 작성될 수 있음을 의미합니다. 사실 리스트같은 경우 워낙 구조가 간단하기에 굳이 재귀를 사용할 필요가 없지만, 트리에서 사용될 재귀의 좋은 연습이 되기 때문에 알아두는 것이 좋습니다. 
+
+\end{frame}
+
+\subsection{ADT List}
+
+\begin{frame}[allowframebreaks]{ADT List}
+\begin{itemize} 
+\item \_\_init\_\_ : List Constructor
+\item \_\_iter\_\_ : 리스트의 원소를 한번씩 traverse하는 iterator.
+\item is\_empty : 리스트가 비어 있으면 True, 아니면 False를 리턴.
+\item prepend / append : 리스트의 앞/뒤에 어떤 element를 넣는 함수. 기존 리스트를 변화시킴. 
+\end{itemize}
+\framebreak
+\begin{itemize}
+\item add : 리스트의 주어진 위치에 element를 추가하는 함수. 기존 리스트를 변화시킴. 
+\item head : 리스트의 첫 번째 원소를 리턴. 
+\item tail : 리스트의 첫 번째 원소를 제외한 나머지 원소들을 리턴. 
+\item sort : 리스트를 주어진 기준에 따라 소팅하여 새 리스트를 반환. 기존 리스트는 변하지 않음. 
+\item max/min : 리스트의 원소 중 주어진 기준으로 볼 때 가장 큰/작은 원소 반환. 기존 리스트는 변하지 않음. 
+\end{itemize}
+
+\end{frame}
+
+\subsection{List implementation using Dynamic Array} 
+
+\begin{frame}{Dynamic Array Datastructure}
+
+Array는 연속된 메모리 블럭을 지칭하는 데이터구조입니다. 이 때 Dynamic이라는 말은, 할당된 array 구역이 다 이용되면 어레이 구역을 늘린다는 의미로 쓰입니다. Array의 시작 주소와 각 데이터의 크기를 안다는 가정하에서, array 내 임의의 원소에는 상수 시간에 접근이 가능합니다. 이것이 링크드리스트와 어레이의 가장 큰 차이입니다. 
+
+어레이를 이용하여 operation들을 구현해 보겠습니다. 
+\end{frame}
+
+\begin{frame}{prepend/append}
+\begin{itemize}
+\item prepend : prepend의 경우, 어레이의 모든 원소를 원소 사이즈만큼 옆으로 옮긴 후 어레이의 처음 위치에 새 elem을 추가해야 합니다. 어레이의 모든 원소를 옆으로 옮기는 것이 O(n)이므로 그만큼의 시간이 듭니다. 
+\item append : append의 경우, 어레이 맨 뒤의 원소의 주소의 끝에 elem을 붙이면 되기 때문에 O(1)입니다. 하지만, worst case의 경우 O(n)인데, 이 두 경우를 합쳐서 생각하면 평균은 O(1)이 됩니다. \footnote{Amortized Cost Analysis로 생각해볼 수 있습니다.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{add(idx, elem)}
+add의 경우, idx에 따라서 옮겨야 하는 원소의 갯수가 다르지만 평균적으로 $\frac{n}{2}$개를 옮겨야 하므로 O(n)입니다. 
+\end{frame}
+
+
+\begin{frame}{head()/tail()}
+둘 다 O(1)입니다. 
+\end{frame}
+
+\begin{frame}{max()/min()}
+둘 다 O(n)입니다. 
+\end{frame}
+
+\begin{frame}{sort()}
+일반적인 소팅 알고리즘을 따릅니다. 어떤 알고리즘을 쓰냐에 따라서 달라집니다. 
+\end{frame}
+
+
+\subsection{List implementation using Linked List} 
+
+\begin{frame}{Linked List Datastructure}
+
+\fig{linkedlist}{Linked List의 구조} 
+
+Linked list는 위와 같이, 데이터와 그 다음 데이터로의 주소값으로 이루어진 데이터구조입니다. 맨 처음과 끝에 Null값을 붙일 수도, 안 붙일 수도 있습니다. Linked list는 list의 개념적인 정의에 매우 충실한 구조인데, 이는 head 뒤에 다음 element로의 포인터를 tail로 보면 tail 또한 linked list이기 때문입니다. 
+\end{frame}
+
+\begin{frame}{prepend}
+prepend : prepend의 경우, 새 LinkedList를 만든 후, head에 item을 첨가합니다. 이후 새로 만든 LinkedList의 tail을 기존 LinkedList로 만든 후, 새로 만든 LinkedList를 반환합니다. 이 과정에서 tail은 언제나 None 아니면 LinkedList일 것입니다. 또한, 이 operation은 지금 리스트 안에 들어 있는 element의 갯수와 상관 없이 상수 시간이 걸릴 것입니다. 
+\end{frame}
+\begin{frame}{append}
+만약 리스트가 비어 있는 경우 prepend와 똑같이 시행합니다. 그렇지 않은 경우, 빈 LinkedList를 만들어 head에 item을 넣습니다. 그 후, 원 LinkedList의 tail에서 None을 발견할 때까지 LinkedList를 traverse한 후, tail이 None인 LinkedList를 발견하면 tail을 새로 만든 LinkedList로 대체합니다. 이 과정에서는 LinkedList를 한 번 끝까지 traverse 해야 하므로, 리스트 내의 element 갯수에 선형적으로 비례하는 시간이 걸립니다. \footnote{이를 방지하기 위해서, tail 뿐만 아니라 앞쪽 방향의 list도 미리 저장하는 doubly linked list를 사용하기도 합니다.} 
+
+\end{frame}
+
+\begin{frame}{add(idx, elem)}
+head에서 head.tail로 idx번 움직인 후, 그곳에서 prepend를 시행하면 되므로 O(n)입니다. 
+\end{frame}
+
+\begin{frame}{remove(elem)}
+head에서 elem을 발견할 때까지 움직인 후, 그곳에서 elem을 발견하면 제거하면 되므로 O(n)입니다. 
+\end{frame}
+
+\begin{frame}{head()/tail()}
+리스트의 첫 번째 원소를 head, 나머지를 tail로 리턴합니다. 둘 다 O(1)입니다. 
+\end{frame}
+
+\begin{frame}{max()/min()}
+둘 다 O(n)입니다. 
+\end{frame}
+
+\begin{frame}{sort()}
+역시 소팅 알고리즘을 똑같이 따릅니다. 
+\end{frame}
+
+% \subsection{List implementation using Binary Tree}
+
+% \begin{frame}{Binary Tree Datastructure}
+% \end{frame}
+
+% \begin{frame}{Applying Binary Tree to Linked List}
+
+% \end{frame}
+
+% \begin{frame}{prepend/append}
+% \end{frame}
+
+% \begin{frame}{add(idx, elem)}
+% \end{frame}
+
+% \begin{frame}{remove(elem)}
+% \end{frame}
+
+% \begin{frame}{head()/tail()}
+% \end{frame}
+
+% \begin{frame}{max(key)/min(key)}
+% \end{frame}
+
+% \begin{frame}{sort(key)}
+% \end{frame}
+
+\end{document}
+
+
