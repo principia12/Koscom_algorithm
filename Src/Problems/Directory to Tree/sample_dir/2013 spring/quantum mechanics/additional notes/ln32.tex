@@ -1,0 +1,162 @@
+% Lecture notes for Physical Mathematics I
+% Ewan Stewart
+% KAIST
+% 2011/11/25
+
+\documentclass[a4paper,12pt]{report}
+
+\usepackage{pm1}
+
+\setcounter{chapter}{3}
+\setcounter{section}{1}
+\setcounter{page}{14}
+
+\begin{document}
+
+\section{Linear operators}
+
+\keyword{Linear operators} are linear mappings from the Hilbert space to itself.
+
+\subsection{Hermitian conjugate, inverse and commutator}
+
+The \keyword{Hermitian conjugate} $A^\dagger$ of an operator $A$ is defined by
+\begin{equation}
+\bra\phi A^\dagger \ket\psi = \left( \bra\psi A \ket\phi \right)^*
+\end{equation}
+and the \keyword{inverse} $A^{-1}$ of an operator $A$ is defined by
+\begin{equation}
+A^{-1} A = A A^{-1} = 1
+\end{equation}
+where $1$ is the identity operator.
+
+The \keyword{commutator} of two operators $A$ and $B$ is given by
+\begin{equation}
+[A,B] = A B - B A
+\end{equation}
+They are said to commute if $[A,B] = 0$.
+
+\subsection{Hermitian, unitary and projection operators}
+
+A \keyword{Hermitian operator} $H$ has the property
+\begin{equation}
+H^\dagger = H
+\end{equation}
+and a \keyword{unitary operator} $U$ has the property
+\begin{equation}
+U^\dagger = U^{-1}
+\end{equation}
+A unitary transformation
+\begin{eqnarray}
+\ket\phi & \to & U \ket\phi
+\\
+\bra\psi & \to & \bra\psi U^\dagger
+\\
+A & \to & U A U^\dagger
+\end{eqnarray}
+leaves contractions invariant
+\begin{equation}
+\bra\psi A \ket\phi \to \bra\psi A \ket\phi
+\end{equation}
+
+A \keyword{projection operator} $P$ is a Hermitian operator with the property
+\begin{equation}
+P^2 = P
+\end{equation}
+It projects onto the subspace $\hilbert{P} = \{ \ket\phi : P \ket\phi = \ket\phi \}$
+and annihilates its orthogonal complement $\hilbert{P}^\perp$
+\begin{equation}
+P \ket\phi =
+\left\{
+\begin{array}{ccl}
+\ket\phi & \textrm{for} & \ket\phi \in \hilbert{P}
+\\
+0 & \textrm{for} & \ket\phi \in \hilbert{P}^\perp
+\end{array}
+\right.
+\end{equation}
+For example
+\begin{equation}
+P = \frac{ \ket\phi \bra\phi }{ \braket\phi\phi }
+\end{equation}
+and $1 - P$ are both projection operators.
+
+\subsection{Eigenspaces}
+
+An \keyword{eigenvector} $\ket\phi$ of an operator $A$ satisfies
+\begin{equation} \label{eigenvector}
+A \ket\phi = \alpha \ket\phi
+\end{equation}
+where the \keyword{eigenvalue} $\alpha$ is a scalar.
+Any linear combination of eigenvectors with the same eigenvalue $\alpha$ is also an eigenvector with eigenvalue $\alpha$, so eigenvectors with the same eigenvalue form a subspace of the Hilbert space called an \keyword{eigenspace}
+\begin{equation}
+\hilbert{A}_\alpha = \left\{ \ket\phi : A \ket\phi = \alpha \ket\phi \right\}
+\end{equation}
+The information that \eq{eigenvector} gives us about $A$ can be distilled as
+\begin{equation} \label{eseq}
+A P_{\hilbert{A}_\alpha} = \alpha P_{\hilbert{A}_\alpha}
+\end{equation}
+where $P_{\hilbert{A}_\alpha}$ is the projection operator that projects onto the eigenspace $\hilbert{A}_\alpha$.
+
+If $A$ is a Hermitian or unitary operator
+\footnote{Or more generally a normal operator: $[N,N^\dagger]=0$.}
+then its eigenspaces $\hilbert{A}_\alpha$ are \keyword{orthogonal}
+\begin{equation}
+P_{\hilbert{A}_\alpha} P_{\hilbert{A}_\beta} = 0
+\qquad \left( \alpha \neq \beta \right)
+\end{equation}
+and \keyword{complete}
+\begin{equation}
+\sum_\alpha P_{\hilbert{A}_\alpha} = 1
+\end{equation}
+Therefore, using \eq{eseq}, $A$ can be decomposed as
+\begin{equation}
+A = \sum_\alpha \alpha P_{\hilbert{A}_\alpha}
+\end{equation}
+See Figure~\ref{fig:eigenspace}.
+\begin{figure}
+\centering
+\begin{tikzpicture}
+\draw[red] (-3,0) -- (3,0) node[right]{$\hilbert{A}_{-1}$};
+\draw[blue] (0,-1) -- (0,3) node[above]{$\hilbert{A}_{2}$};
+\draw[->] (0,0) -- (1,1) node[above right]{$\ket\phi$};
+\draw[dotted] (1,1) -- (1,0);
+\draw[dotted] (1,1) -- (0,1);
+\draw[->] (0,0) -- (-1,2) node[above left]{$A \ket\phi$};
+\draw[dotted] (-1,2) -- (-1,0);
+\draw[dotted] (-1,2) -- (0,2);
+\end{tikzpicture}
+\caption{ \label{fig:eigenspace}
+$A \ket\phi = - P_{\hilbert{A}_{-1}} \ket\phi + 2 P_{\hilbert{A}_{2}} \ket\phi$.
+}
+\end{figure}
+
+Let $A$ and $B$ be Hermitian or unitary operators with eigenspaces $\hilbert{A}_\alpha$ and $\hilbert{B}_\beta$ respectively.
+Then the intersections of their eigenspaces $\hilbert{A}_\alpha \cap \hilbert{B}_\beta$ are orthogonal
+\begin{equation}
+P_{\hilbert{A}_\alpha \cap \hilbert{B}_\beta} P_{\hilbert{A}_\gamma \cap \hilbert{B}_\delta} = 0
+\qquad \left( \alpha,\beta \neq \gamma,\delta \right)
+\end{equation}
+The intersections are complete if and only if $A$ and $B$ commute
+\begin{equation}
+\sum_{\alpha,\beta} P_{\hilbert{A}_\alpha \cap \hilbert{B}_\beta} = 1
+\quad \Leftrightarrow \quad
+[A,B] = 0
+\end{equation}
+Thus if $A$ and $B$ commute we can decompose them in terms of a common set of projection operators
+\begin{eqnarray}
+A & = & \sum_{\alpha,\beta} \alpha P_{\hilbert{A}_\alpha \cap \hilbert{B}_\beta}
+\\
+B & = & \sum_{\alpha,\beta} \beta P_{\hilbert{A}_\alpha \cap \hilbert{B}_\beta}
+\end{eqnarray}
+Note that
+\begin{equation}
+P_{\hilbert{A}_\alpha \cap \hilbert{B}_\beta} = P_{\hilbert{A}_\alpha} P_{\hilbert{B}_\beta}
+\quad \Leftrightarrow \quad
+\left[ P_{\hilbert{A}_\alpha} , P_{\hilbert{B}_\beta} \right] = 0
+\quad \Leftrightarrow \quad
+\left[ A , B \right] = 0
+\end{equation}
+
+\end{document}
+
+

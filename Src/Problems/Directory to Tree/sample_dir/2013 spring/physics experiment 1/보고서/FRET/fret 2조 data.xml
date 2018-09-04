@@ -1,0 +1,1340 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>ssw</LastAuthor>
+  <Created>2013-05-29T00:00:00Z</Created>
+  <LastSaved>2013-06-12T01:14:57Z</LastSaved>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>9396</WindowHeight>
+  <WindowWidth>9744</WindowWidth>
+  <WindowTopX>252</WindowTopX>
+  <WindowTopY>612</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial Unicode MS" x:CharSet="129" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="m93036032">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m93036052">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m93036072">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial Unicode MS" x:CharSet="129" x:Family="Modern"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m93036092">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m93036112">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m93035808">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m93035828">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Time"/>
+  </Style>
+  <Style ss:ID="m93035848">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Time"/>
+  </Style>
+  <Style ss:ID="m93035868">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m93035888">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m93035908">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m93035928">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m87556096">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m87556116">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m87556136">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="mm:ss.0"/>
+  </Style>
+  <Style ss:ID="m87556156">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m87556176">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m87556196">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m87556216">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial Unicode MS" x:CharSet="129" x:Family="Modern"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial Unicode MS" x:CharSet="129" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial Unicode MS" x:CharSet="129" x:Family="Modern"/>
+   <NumberFormat ss:Format="General Date"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial Unicode MS" x:CharSet="129" x:Family="Modern"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial Unicode MS" x:CharSet="129" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial Unicode MS" x:CharSet="129" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s81">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="9"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s82">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="바탕" x:CharSet="129" x:Family="Roman" ss:Size="8"
+    ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="General">
+  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="39" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="150" ss:Span="1"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Operator</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Header</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ph251</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Identification</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ph251</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Date</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2013-05-29T14:00:42.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PlateName</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">20130529-134212</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">DateMeasured</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2013-05-29T13:42:46.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">DateEvaluated</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2013-05-29T14:00:37.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ValidState</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Measured</Data></Cell>
+   </Row>
+   <Row ss:Index="11" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Software</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Multimode Analysis Software</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Version</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">3.2.0.6</Data></Cell>
+   </Row>
+   <Row ss:Index="14" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Instrument Name</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">DTX 800 (1)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Serial Number</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">1131</Data></Cell>
+   </Row>
+   <Row ss:Index="17" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Labware</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Name</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Standard 96</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Rows</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">8</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Columns</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ProtectionState</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Normal</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WellShape</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Round</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">BottomShape</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Flat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Created</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2011-02-17T14:17:27.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">DateEdited</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2011-02-17T14:17:27.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">LotNr</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">DefaultLot</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Optimized</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2011-02-17T14:17:27.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Orientation</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Landscape</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ReadMode</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Row</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Notes</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">None</Data></Cell>
+   </Row>
+   <Row ss:Index="32" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Protocol</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ProtocolName</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ph251</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ApplicationType</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Analysis</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">DateCreated</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2011-02-17T14:26:44.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">DateEdited</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2013-03-24T20:51:04.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">DateMeasured</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2013-05-29T13:42:46.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">DateEvaluated</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2013-05-29T14:00:37.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Notes</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">test</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <TopRowVisible>3</TopRowVisible>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Raw_P_1">
+  <Table ss:ExpandedColumnCount="20" ss:ExpandedRowCount="30" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="69.599999999999994" ss:Span="8"/>
+   <Row ss:AutoFitHeight="0" ss:Span="1"/>
+   <Row ss:Index="7" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Method</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ph251</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ph251</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ph251</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ph251</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ph251</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ph251</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ph251</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ph251</Data></Cell>
+    <Cell ss:Index="12" ss:MergeDown="2" ss:StyleID="m87556096"><Data
+      ss:Type="String">t</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="m87556116"><Data ss:Type="String">Donor only(1:0)</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="m87556136"><Data ss:Type="DateTime">1899-12-31T00:01:00.500</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Sequence</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:Index="13" ss:MergeAcross="1" ss:StyleID="m87556156"><Data
+      ss:Type="String">A1</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m87556176"><Data ss:Type="String">A2</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m87556196"><Data ss:Type="String">A4</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m87556216"><Data ss:Type="String">A5</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Name</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">MeasurementValue1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">MeasurementValue2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">MeasurementValue1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">MeasurementValue2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">MeasurementValue1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">MeasurementValue2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">MeasurementValue1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">MeasurementValue2</Data></Cell>
+    <Cell ss:Index="13" ss:StyleID="s81"><Data ss:Type="String">V1</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V2</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V1</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V2</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V1</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V2</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V1</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Point Y</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">224276912</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">220832240</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">239408016</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">235113296</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">126058448</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">126193256</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">135756848</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">134238000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Point X</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">217573648</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">214454384</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">231519648</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">227834864</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">125079208</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">125343936</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">131480064</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">131629800</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Cycle</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">216654816</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">213359088</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">230177696</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">226179040</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">126269528</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">126445336</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">133034024</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">133443416</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Time (sec)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">216701200</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">213681456</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">230411728</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">226774400</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">127069784</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">127335448</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">134630736</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">134741600</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Temperature (°C)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">217980144</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">216729952</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">231809328</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">230484288</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">130237152</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">130650728</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">138076240</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">138797296</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Well A.1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6294873</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6226163</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6298482</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6243056</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6296033</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6250044</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6360331</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6271189</Data></Cell>
+    <Cell ss:Index="12" ss:MergeDown="2" ss:StyleID="m93035808"><Data
+      ss:Type="String">t</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="m93035828"><Data ss:Type="DateTime">1899-12-31T01:01:00.000</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="m93035848"><Data ss:Type="DateTime">1899-12-31T01:02:00.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Well A.2</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4609526</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4583149</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4591281</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4622751</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4574674</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4599955</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4589479</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4606646</Data></Cell>
+    <Cell ss:Index="13" ss:MergeAcross="1" ss:StyleID="m93035868"><Data
+      ss:Type="String">A10</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m93035888"><Data ss:Type="String">A11</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m93035908"><Data ss:Type="String">C1</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m93035928"><Data ss:Type="String">C2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Well A.4</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4325787</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4344804</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4328253</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4311037</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4288736</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4322280</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4296009</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4320477</Data></Cell>
+    <Cell ss:Index="13" ss:StyleID="s81"><Data ss:Type="String">V1</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V2</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V1</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V2</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V1</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V2</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V1</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Well A.5</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4490385</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4479382</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4452919</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4439499</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4423391</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4450780</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4458112</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4460794</Data></Cell>
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">97664456</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">99281736</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">99961592</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">101079104</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">76841632</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">77442976</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">74270040</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">74975968</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Well A.7</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4105143</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4091310</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4098630</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4076157</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4115555</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4081335</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4083016</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4079468</Data></Cell>
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">98481848</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">99178016</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">102276552</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">102925440</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">75508896</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">75856568</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">73718608</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">74257360</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Well A.8</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2783871</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2809873</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2791212</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2810519</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2782941</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2817945</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2790611</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2800335</Data></Cell>
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">100701192</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">101145256</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">103441416</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">104094960</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">75459440</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">75782968</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">74341432</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">74706360</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Well A.10</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6288314</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6332546</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6268422</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6295421</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6302068</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6263877</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6281314</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6267930</Data></Cell>
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">101726360</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">102061848</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">104714200</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">105374056</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">75230704</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">75631392</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">74433032</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">74835928</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Well A.11</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">5407948</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">5369083</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">5395721</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">5396634</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">5339954</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">5352137</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">5339869</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">5332884</Data></Cell>
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">104518536</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">104833944</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">107828296</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">108225704</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">77224288</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">77462768</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">76579576</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">76755120</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Well C.1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2785643</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2792601</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2788087</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2804923</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2835845</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2832760</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2809003</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2827420</Data></Cell>
+    <Cell ss:Index="12" ss:MergeDown="2" ss:StyleID="m93036032"><Data
+      ss:Type="String">t</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="m93036052"><Data ss:Type="String">blank</Data></Cell>
+    <Cell ss:MergeAcross="3" ss:MergeDown="7" ss:StyleID="m93036072"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Well C.2</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2773605</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2769783</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2809268</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2779564</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2795930</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2803770</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2805647</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2798562</Data></Cell>
+    <Cell ss:Index="13" ss:MergeAcross="1" ss:StyleID="m93036092"><Data
+      ss:Type="String">A10</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m93036112"><Data ss:Type="String">A11</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="13" ss:StyleID="s81"><Data ss:Type="String">V1</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V2</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V1</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">V2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2569346</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2573466</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2719022</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2719841</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2554245</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2551033</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2699798</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2702496</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2556664</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2562897</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2713276</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2691179</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2566688</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2587545</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2705955</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2712314</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="12" ss:StyleID="s82"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2628710</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2599937</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2768465</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="Number">2770547</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <TopRowVisible>4</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>32</ActiveRow>
+     <ActiveCol>8</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Method_Info">
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="104" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="140.4" ss:Span="2"/>
+   <Row ss:AutoFitHeight="0"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Methods</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Name</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ph251</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">SequenceNumber</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Hardware</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Excitation Wavelength (nm)</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 485 SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">First Emission Wavelength (nm)</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 535 SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Second Emission Wavelength (nm)</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 535 SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Integration Time</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 0.5</Data></Cell>
+   </Row>
+   <Row ss:Index="11" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Settings</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Technic</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">FluorescenceRET</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Type</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Multichromatic</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ReadHeight</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WellRows</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">8</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WellCols</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cycles</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PointsColumn</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PointsRows</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaximumValue</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">6332546</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MinimumValue</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Units</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">RFU</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Notes</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">+ | X:-1| Y:-2| Ex:-1| Em:-2| L:0| Sh:0|  |Gains:1 21|Led: 5| LedCurrent:31.37mA|  LedPoti:10| LedLowPoti:110| LedLowRefADC:5512| RefNorm:59430| PMTPower:200| PMTThreshold:145| Background:0 @ 0| :0.87163 5327 5512 54987 58772 54 649 12 | :1 414 200 2181 21 160 0| :414 1892|Z-Pos: 100 2870 0 0 0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Name of Values</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Data Column 1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">MeasurementValue1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Data Column 2</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">MeasurementValue2</Data></Cell>
+   </Row>
+   <Row ss:Index="28" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Methods</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Name</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ph251</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">SequenceNumber</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">6</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Hardware</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Excitation Wavelength (nm)</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 485 SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">First Emission Wavelength (nm)</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 535 SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Second Emission Wavelength (nm)</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 535 SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Integration Time</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 0.5</Data></Cell>
+   </Row>
+   <Row ss:Index="37" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Settings</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Technic</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">FluorescenceRET</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Type</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Multichromatic</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ReadHeight</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WellRows</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">8</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WellCols</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cycles</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PointsColumn</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PointsRows</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaximumValue</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">6298482</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MinimumValue</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Units</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">RFU</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Notes</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">+ | X:-1| Y:-1| Ex:-2| Em:-3| L:0| Sh:0|  |Gains:1 21|Led: 5| LedCurrent:31.37mA|  LedPoti:10| LedLowPoti:110| LedLowRefADC:5092| RefNorm:59430| PMTPower:200| PMTThreshold:145| Background:0 @ 0| :0.86999 4884 5092 55398 59153 55 651 13 | :1 414 200 2181 21 160 0| :414 1892|Z-Pos: 100 2870 0 0 0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Name of Values</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Data Column 1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">MeasurementValue1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Data Column 2</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">MeasurementValue2</Data></Cell>
+   </Row>
+   <Row ss:Index="54" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Methods</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Name</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ph251</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">SequenceNumber</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">10</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Hardware</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Excitation Wavelength (nm)</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 485 SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">First Emission Wavelength (nm)</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 535 SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Second Emission Wavelength (nm)</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 535 SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Integration Time</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 0.5</Data></Cell>
+   </Row>
+   <Row ss:Index="63" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Settings</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Technic</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">FluorescenceRET</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Type</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Multichromatic</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ReadHeight</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WellRows</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">8</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WellCols</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cycles</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PointsColumn</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PointsRows</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaximumValue</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">6302068</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MinimumValue</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Units</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">RFU</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Notes</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">+ | X:-1| Y:-2| Ex:-2| Em:-3| L:0| Sh:0|  |Gains:1 21|Led: 5| LedCurrent:31.37mA|  LedPoti:10| LedLowPoti:110| LedLowRefADC:4886| RefNorm:59430| PMTPower:200| PMTThreshold:145| Background:0 @ 0| :0.86858 4669 4886 55585 59334 53 649 14 | :1 414 200 2181 21 160 0| :414 1892|Z-Pos: 100 2870 0 0 0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Name of Values</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Data Column 1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">MeasurementValue1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Data Column 2</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">MeasurementValue2</Data></Cell>
+   </Row>
+   <Row ss:Index="80" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Methods</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Name</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ph251</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">SequenceNumber</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">14</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Hardware</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Excitation Wavelength (nm)</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 485 SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">First Emission Wavelength (nm)</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 535 SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Second Emission Wavelength (nm)</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 535 SL 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Integration Time</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"> 0.5</Data></Cell>
+   </Row>
+   <Row ss:Index="89" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Settings</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Technic</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">FluorescenceRET</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Type</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Multichromatic</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ReadHeight</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WellRows</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">8</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WellCols</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cycles</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PointsColumn</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PointsRows</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaximumValue</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">6360331</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MinimumValue</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Units</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">RFU</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Notes</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">+ | X:-1| Y:-2| Ex:-2| Em:-1| L:0| Sh:0|  |Gains:1 21|Led: 5| LedCurrent:31.37mA|  LedPoti:10| LedLowPoti:110| LedLowRefADC:4863| RefNorm:59430| PMTPower:200| PMTThreshold:145| Background:0 @ 0| :0.86858 4645 4863 55621 59344 54 651 14 | :1 414 200 2181 21 160 0| :414 1892|Z-Pos: 100 2870 0 0 0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Name of Values</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Data Column 1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">MeasurementValue1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Data Column 2</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">MeasurementValue2</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
