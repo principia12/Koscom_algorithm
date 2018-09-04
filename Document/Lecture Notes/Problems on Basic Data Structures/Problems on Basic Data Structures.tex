@@ -195,7 +195,6 @@
 % \end{lstlisting}
 % \end{frame}
 
-\section{Directory Structure as Tree} 
 
 % \begin{frame}{}
 
@@ -204,14 +203,53 @@
 \section{Huffman Encoding/Decoding} 
 
 
-% \begin{frame}{Huffman Encoding}
+ \begin{frame}{Huffman Encoding}
+Huffman Encoding은 무손실\footnote{ Jpeg나 mp3 같은 것은 손실압축의 예시입니다.} 압축 알고리즘 중 하나입니다.  압축 알고리즘의 구현은 곧 압축 알고리즘 및 복원 알고리즘의 구현을 말합니다. 여기서는 binary tree를 이용한 문자열 압축 알고리즘을 살펴보겠습니다. 
+ \end{frame}
 
-% \end{frame}
+ \begin{frame}{Huffman Encoding의 아이디어}
+ 
+ 예를 들어서, 문자열 abbccccddddeeeeeffffff가 있다고 합시다. 이 때, 원칙적으로 문자열을 인코딩하기 위해서는 문자당 5비트가 필요하므로\footnote{현실에서는 더 필요하지만, 여기서는 단순하게 영어 소문자만 인코딩한다고 생각합니다.} 21글자를 인코딩하기 위하여 110비트가 필요합니다. 
+ 
+ 그런데, 사실 구분 가능하기만 하다면 모든 문자에 같은 크기의 비트를 할당할 필요가 없습니다. 만약, 더 많이 나오는 글자에 적은 수의 비트를 할당하고, 적게 나오는 글자에 더 긴 비트를 할당한다면, 글자를 인코딩할 때 필요한 비트 수를 줄일 수 있을 것입니다. 그렇다면 어떻게 각 글자를 인코딩하는 것을 만들 수 있을까요? 
 
+ \end{frame}
+ 
+ 
+\begin{frame}{Huffman Coding의 과정 }
+ Huffman Coding은 priority queue 하나와 binary tree 하나를 이용하여 이루어집니다. 
+\begin{itemize}
+\item 먼저, 압축하기 위해서 주어진 문자열을 분석하여 빈도를 우선순위로 하여, 나오는 모든 알파벳을 우선순위 큐에 push합니다. 
+\item 큐에 하나의 원소만 남을 때까지 다음 과정을 반복합니다. 
+\begin{itemize} 
+\item 원소 2개를 pop 합니다. 이 때, 우선순위가 \textbf{낮은}\footnote{즉, 빈도가 작은} 원소부터 pop해야 합니다. 
+\item 원소 2개를 children으로, root로는 두 원소의 우선순위를 합한 정수를 가지는 binary tree를 만듭니다. 
+\item 위에서 만든 binary tree를 priority는 root에 저장된 정수와 같게 하여 priority queue에 push합니다.  
+\end{itemize}
+\item 큐의 마지막 원소를 pop합니다. 이 때 나오는 원소는 binary tree여야 합니다. 
+\item 위에서 pop한 트리를 이용하여, 각 leaf마다 주소를 할당합니다. 주소의 할당은 root의 주소에, 오른쪽 child는 0을, 왼쪽 child는 1을 붙여 할당합니다. 
+\item leaf에 저장된 알파벳과, 할당된 주소를 이용해서 원 string을 encode하고 그 후 트리와 같이 리턴합니다. 
+\end{itemize}
+ \end{frame} 
+ 
+ \begin{frame}{Huffman Coding의 과정 예시}
+ 
+ 위 알고리즘을 따라서 abbcccc를 인코딩하는 과정의 일부를 살펴보겠습니다. 
+\begin{table}[]
+\centering
+\caption{Huffman Encoding의 예시}
+\label{my-label}
+\begin{tabular}{|l|l|l|}
+\hline
+queue & x, y & binary tree \\ \hline
+(a,1), (b,2), (c,4) & (a,1), (b,2)    & t = Tree(3, [(a,1), (b,2)])     \\ \hline
+(t, 4), (c,3) & queue 원소 다   & s = Tree(7, [(c,3), (t,4)])      \\ \hline
+(s, 7) &     & * is binary!      \\ \hline
+\end{tabular}
+\end{table}
 
-% \begin{frame}{}
+ \end{frame}
 
-% \end{frame}
 
 
 \section{Expression Parsing}
@@ -248,7 +286,6 @@
 % \item P의 원소들은 $(N \cup T)*N(N \cup T)* -> (N \cup T)*$ 의 꼴. 
 % \end{itemize}
 % \end{frame}
-
 
 
 
