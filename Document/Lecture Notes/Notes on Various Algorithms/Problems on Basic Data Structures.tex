@@ -1,0 +1,411 @@
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+\documentclass{beamer}
+
+% There are many different themes available for Beamer. A comprehensive
+% list with examples is given here:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+% You can uncomment the themes below if you would like to use a different
+% one:
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{boxes}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{default}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+\usepackage{kotex}
+\usepackage{braket}
+\usepackage{array}
+\usepackage{calc}
+\usepackage{datetime}
+
+
+\graphicspath{{images/}}
+\usepackage{listings}
+
+\newcommand\fig[2]{
+\begin{figure}[h]
+  \centering
+  \includegraphics[width = \textwidth]{#1}
+  \caption{#2} 
+  \label{fig:#1}
+\end{figure}
+}
+
+\usepackage{kotex} 
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Python,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+
+\lstdefinestyle{python}{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4
+}
+
+
+\title{Problems on Basic Data Structures}
+
+% A subtitle is optional and this may be deleted
+\subtitle{Koscom Algorithm Lecture}
+
+\author{신승우}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+% \institute[Universities of Somewhere and Elsewhere] % (optional, but mostly needed)
+% {
+  % \inst{1}%
+  % Department of Computer Science\\
+  % University of Somewhere
+  % \and
+  % \inst{2}%
+  % Department of Theoretical Philosophy\\
+  % University of Elsewhere}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+\subject{Theoretical Computer Science}
+
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each section:
+
+
+% \AtBeginSection[]
+% {
+  % \begin{frame}[fragile]<beamer>{Outline}
+    % \tableofcontents[currentsection,hideallsections]
+  % \end{frame}
+% }
+
+% Let's get started
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Section and sections will appear in the presentation overview
+% and table of contents.
+
+% \begin{frame}[fragile][fragile]{hello.py}
+% 이제는 위에서 했던 것과 거의 비슷한 것을 할 텐데, 다만 다른 방식으로 해 볼 것입니다. 화면에서 보이는 대로 따라하세요. 
+% \begin{lstlisting}[language=Python]
+% print('Hello World!')
+% \end{lstlisting}
+% \end{frame}
+
+
+% \begin{frame}{}
+
+% \end{frame}
+
+\section{Evolution Algorithm}
+
+\begin{frame}{Introduction to Genetic Algorithm}
+
+유전 알고리즘은 어떤 문제를 해결하기 위한 가설들을 자연에서의 유전 과정과 흡사한 방법을 이용하여 진화시키고, fitness function을 이용하여 이를 검증, 발전시켜나가는 방법입니다. 대단히 우연성에 강하게 의존할 것 같은 알고리즘이지만, 의외로 많은 곳에서 활발하게 쓰이고 있습니다. 
+\end{frame}
+
+\begin{frame}{Process of Genetic Algorithm}
+크게 
+
+\begin{itemize} 
+\item 초기화 : 가설들을 유전자로 표현하고, 랜덤한 유전자를 생성합니다. 
+\item 선택 : 초기화된 유전자들을 \textbf{fitness} 함수를 이용하여 평가하고, 이를 선택한다. 
+\item 교차 : 선택된 유전자들을 확률적으로 섞여 변이를 일으켜, 다음 세대의 유전자를 만든다. 
+\item 변이 : 만들어진 다음 세대 유전자에 인위적으로 돌연변이를 일으킨다. 대개의 경우 매우 낮은 확률로 변이를 준다. 
+\item 대치 : 후대 유전자로 현 유전자 풀을 교체한다. 
+\item 반복 : 이 과정을 반복한다. 
+\end{itemize}
+
+의 과정을 거친다. 이를 위해서, fitness함수를 적절히 정의하는 것이 필수적이다. 
+\end{frame}
+
+\begin{frame}{유전 알고리즘의 예시}
+0000-1111 중 가장 큰 이진수를 찾아보는 문제를 풀어보자. 이 때, 유전자는 정수 4개의 리스트로 생각할 수 있다. 여기서 fitness 함수는 1의 갯수로 두고 진화를 시켜본다고 생각하자. 
+\end{frame}
+
+\begin{frame}{유전 알고리즘의 예시 : 초기화}
+10개의 유전자를 아래와 같이 랜덤하게 생성하였다. 
+
+[0, 0, 1, 0], [0, 1, 0, 0], [1, 0, 1, 0], [1, 1, 0, 1], [0, 0, 0, 0], [0, 0, 0, 0], [1, 0, 0, 0], [1, 0, 1, 1], [0, 0, 1, 1], [0, 0, 0, 1]
+
+\end{frame}
+\begin{frame}{유전 알고리즘의 예시 : 선택}
+위에서 정한 fitness 함수가 높은 유전자 순으로 배열하면 아래와 같다. 
+
+[1, 1, 0, 1], [1, 0, 1, 1]  : 3
+ 
+[1, 0, 1, 0], [0, 0, 1, 1] : 2
+
+[0, 0, 1, 0], [0, 1, 0, 0], [1, 0, 0, 0], [0, 0, 0, 1] : 1
+
+[0, 0, 0, 0], [0, 0, 0, 0] : 0
+
+그 후, 이 중 상위 몇 개만을 골라\footnote{고르는 방법은 토너먼트 선택, 랭킹 기반 선택 등 다양한 방법이 있다.} 다음 세대를 만드는 데 사용할 것이다. 
+
+\end{frame}
+\begin{frame}{유전 알고리즘의 예시 : 교차}
+
+앞에서 골라진 유전자가 다음의 4개라고 하자. 
+
+[1, 1, 0, 1], [1, 0, 1, 1], [1, 0, 1, 0], [0, 0, 1, 1]
+
+이 때, 이를 랜덤하게 교배한다. 여기서는 간단하게 두 유전자가 같은 비트는 그대로 사용하고, 다른 비트는 둘 중 랜덤하게 고르기로 하자. 예를 들어서 아래와 같이 교배할 수 있다. 
+
+[1, 1, 0, 1] + [1, 0, 1, 1] = [1*, 1-, 1+, 1*]
+
+이렇게 교배하여 만든 유전자 중 상위 10개를 고르자. 
+\end{frame}
+\begin{frame}{유전 알고리즘의 예시 : 변이/대치}
+골라진 10개 중 랜덤하게 돌연변이를 줄 수 있다. 돌연변이를 준 후, 다음 세대의 유전자로 기존 유전자를 교체한 후, 이를 반복한다. 
+\end{frame}
+
+
+\begin{frame}{Application of Genetic Algorithm}
+\begin{itemize}
+\item AutoML : Applying Evolution Algorithm in Deep Learning 
+\item Fault-Localization Problem 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Spectra-based Fault-Localization Problem}
+어떤 프로그램에 대해서 m개의 테스트를 시행하였다. 이 때, 
+\begin{itemize} 
+\item Spectra : 프로그램의 각 라인에 대해서, $(e_p, e_f, n_p, n_f)$의 튜플을 말한다. 이 때, $e_p, e_f$는 각각 그 라인이 통과한/실패한 테스트에서 실행된 횟수를 말하고, $n_p, n_f$는 각각 그 라인이 통과한/실패한 테스트에서 실행되지 않은 횟수를 말한다. 
+\item Fault-Localization : 테스트를 통과하지 못한 것이 어떤 라인에 의한 것인지 찾는 것을 의미한다. 
+\end{itemize}
+
+이 때, Spectra를 이용해서 Fault Localization 문제를 푸는 것을 Spectra-based Fault Localization이라고 한다. 
+\end{frame}
+
+\begin{frame}{Risk Evaluation Metric}
+SBFL은 일반적으로 spectra에 기반한 metric들을 이용하여 각 라인이 얼마나 에러에 기여한지 평가한다. 예컨대, $e_f$가 실패한 테스트의 수와 거의 일치한다면, 그 라인이 에러에 기여했을 확률은 지극히 높을 것이다. 이런 metric을 Risk Evaluation Metric이라고 하며, 좋은 metric을 찾는 것이 SBFL에서 매우 중요하다. 
+\end{frame}
+
+\begin{frame}{Applying Genetic Algorithm for Metric Generation}
+
+이제, metric을 tree로 보고, 랜덤하게 유전자를 준비하여 가지치기와 붙이기를 통해서 유전자 교배를 시행, 이를 통해서 metric을 진화시킬 수 있다. 논문 Evolving Human Competitive Spectra-Based Fault Localisation Techniques 에서는 이와 같은 방법을 통해서 인간이 만든 Risk Evaluation Metric과 비슷하거나 더 좋은 성능을 가지는 metric을 만드는 것에 성공하였다. 
+\end{frame}
+
+% \section{Hidden Markov Models and Dynamic Programming}
+
+
+\section{Simulation on 2D Mechanics} 
+
+\begin{frame}{Simulation and Object Oriented Language}
+초창기의 객체지향 언어는 시뮬레이션을 위해서 만들어진 경우가 많았습니다. 이는 객체지향이 시뮬레이션을 작성하기에 매우 적합하기 때문입니다. 객체지향으로 시뮬레이션을 작성하기 적합한 이유는, 객체들 간 상호작용 법칙과 초기조건만 지정해 주면 어렵지 않게 객체 간의 상호작용을 일으킬 수 있기 때문입니다. 
+
+가장 대표적인 예시로는 역학 시뮬레이터가 있습니다. 여기서는 2d 공간 내에서 입자간 상호작용을 설정해 주었을 때, 어떤 식으로 시뮬레이션이 작성되는지 살펴보겠습니다. 
+\end{frame}
+
+\begin{frame}{Basic Mechanics}
+
+물리적인 시뮬레이션을 만든다면, 객체간의 상호작용 법칙은 뉴턴역학을 따를 것입니다. 따라서 간단하게 뉴턴역학을 살펴보고자 합니다. 
+
+역학에서 풀고자 하는 문제는, 주어진 역장 $\vec{F}$에 대해서 $\vec{r}(t)$를 구하는 것을 목표로 합니다. 이 때, 이를 구하는 방법은 뉴턴의 제 2법칙인 $F = ma$를 이용하여 구할 수 있습니다. 
+
+\end{frame}
+
+\begin{frame}{Ideal Gas Simulation}
+PV = nRT의 시뮬레이션을 통한 검증을 해 보겠습니다. 
+\end{frame}
+
+
+\section{Fourier Transform}
+
+\begin{frame}{Motivating Example} 
+핸드폰 기지국에서 고객에게 신호를 보내는 상황을 생각해 봅시다. 이 때, 
+
+\begin{itemize} 
+\item 모든 고객이 받는 신호는 같습니다. 
+\item 그런데, 모든 고객은 거기서 각자 다른 신호를 받아야만 합니다. 
+\end{itemize}
+
+어떻게 하면 여러 고객에게 각자에 맞는 신호를 전달할 수 있을까요? 이를 해결하기 위해서 여러 방법이 제시되었는데, 그 중 하나가 Fourier Transform을 이용한 것입니다. 
+\end{frame}
+
+\begin{frame}{Motivating Example : Fourier Transform 들여다보기} 
+
+먼저, 삼각함수의 다음 성질들을 살펴보자. 
+
+\begin{itemize}
+\item $sin(x+y) = sin(x)cos(y) + sin(y)cos(x)$
+\item $cos(x+y) = cos(x)cos(y) - sin(x)sin(y)$
+\item $tan(x+y) = \frac{tan(x)tan(y)}{1-tan(x)tan(y)}$
+\end{itemize}
+
+위 식을 이용해서, 1) $sin(nx)sin(mx) = \frac{1}{2} (cos(m-n)x - cos(m+n)x)$임을 얻을 수 있다. 
+
+\end{frame}
+
+\begin{frame}{Proof of 1)} 
+위 삼각함수 합차공식 중 $cos(x+y) = cos(x)cos(y) - sin(x)sin(y)$ 에서, x 대신 mx, y 대신 nx를 대입하면 다음과 같다. 
+
+$cos((m+n)x) = cos(mx)cos(nx) - sin(nx) sin(mx)$ 
+
+비슷하게, mx, -nx를 각각 대입하면 다음과 같다. 
+
+$cos((m-n)x) = cos(mx)cos(-nx) - sin(mx) sin(-nx)$
+
+여기서 $cos(-x) = cos(x), sin(-x) = -sin(x)$임을 이용하고, 위 두 식을 빼면 위 결과를 얻을 수 있다. 
+
+\end{frame}
+
+\begin{frame}{확장된 Motivation의 예시 : Fourier Transform 들여다보기} 
+
+여기서, 위 1)을 이용하여 2) $\int^{\pi}_{-\pi} sin(nx)sin(mx) dx = C\delta_{nm}$ 임을 보일 수 있다. 여기서 $\delta_{nm}$은 n=m이면 1이고, 아니면 0인 함수이다.
+
+\end{frame}
+
+\begin{frame}{Proof of 2)} 
+$\int cos(nx) dx = \frac{1}{n} sin(nx) + D$ 이다. 따라서 
+
+$\int \frac{1}{2} (cos(m-n)x - cos(m+n)x) dx = \frac{1}{2(m-n)} sin((m-n)x) - \frac{1}{2(m+n)} sin((m+n)x)$ 
+
+이다. 여기서 각각 $\pi, -\pi$를 넣어 계산하면 모든 항이 0이 되므로 0이다. 만약 m=n이라면, 
+
+$\int\frac{1}{2} (cos(0) - cos(2nx) dx = \frac{x}{2}$ 이므로 $\pi$가 된다. 
+
+\end{frame}
+
+\begin{frame}{확장된 Motivation의 예시 : 유사벡터} 
+
+이제, 다음과 같은 집합 2개와 급수를 생각해 보자. 
+
+\begin{itemize} 
+\item $[-\pi, \pi]$를 정의역으로 가지는 모든 연속함수의 집합 F
+\item $S = \{sin(nx)|n = 1,2,....\} \cup {1}$ 
+\item $\sum^{\inf}_{n=0} [\int^{\pi}_{-\pi} f(x) sin(nx) dx] sin (nx) $
+\end{itemize}
+
+여기서, 위 두 슬라이드에서의 결과($\int^{\pi}_{-\pi} sin(nx)sin(mx) dx = C\delta_{nm}$)를 이용하면 S의 원소들을 이용해서 F에서 일종의 좌표계를 얻을 수 있음을 알 수 있다. 이 좌표계는 $f(x) \rightarrow (\int^{\pi}_{-\pi} f(x) sin(nx) dx), n=0,1,...$ 으로 주어진다. 
+\end{frame}
+
+
+\begin{frame}{확장된 Motivation의 예시 : 기지국에서 신호 보내기} 
+
+따라서, 다음과 같이 기지국의 신호를 생각할 수 있다. 
+
+\begin{itemize} 
+\item 기지국에서 신호를 n명에게 보낸다고 할 때, 
+\begin{itemize}
+\item n명 각각은 0,1로 된 stream을 받을 수 있어야 한다. 
+\item 따라서, 2n개의 sin 기저를 준비해서 각각 유저에게 배포하고, 
+\item 유저는 본인이 가진 벡터를 이용하여 신호를 '내적' 하여, 남은 결과값만을 분석한다. 
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Implementation}
+
+Coding! 
+
+\end{frame}
+
+\end{document}
+
+

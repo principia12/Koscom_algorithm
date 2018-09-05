@@ -4,6 +4,8 @@ __pycache__/
 
 *.swp
 
+img/
+
 *.vrb
 *.log 
 *.aux
@@ -12,3 +14,4 @@ __pycache__/
 *.toc
 *.out
 *.txt
+*.gz
