@@ -32,7 +32,7 @@ def basic_fft_example():
     ax[1].set_xlabel('Freq (Hz)')
     ax[1].set_ylabel('|Y(freq)|')
 
-    plot_url = py.plot_mpl(fig, filename='mpl-basic-fft')
+    #plot_url = py.plot_mpl(fig, filename='mpl-basic-fft')
     print(plot_url)
     
 def basic_fft(freq0, freq1):
@@ -61,7 +61,7 @@ def basic_fft(freq0, freq1):
     ax[1].set_xlabel('Freq (Hz)')
     ax[1].set_ylabel('|Y(freq)|')
 
-    plot_url = py.plot_mpl(fig, filename='mpl-basic-fft')
+    # plot_url = py.plot_mpl(fig, filename='mpl-basic-fft')
     
 
 def modulation(freq0, freq1, signal, sample_rate = 300, quiet = True):
@@ -104,7 +104,7 @@ def modulation(freq0, freq1, signal, sample_rate = 300, quiet = True):
         ax[1].set_xlabel('Freq (Hz)')
         ax[1].set_ylabel('|Y(freq)|')
 
-        plot_url = py.plot_mpl(fig, filename='mpl-basic-fft')
+        # plot_url = py.plot_mpl(fig, filename='mpl-basic-fft')
     
     return y, t
             
@@ -274,11 +274,11 @@ if __name__ == '__main__':
     
     # simple modulation test - single client 
     alphabet = 'abcdefghijklmnopqrstuwxyz '
-    res = decode_signal(*modulation(5, 10, string2bin('hi'), quiet = False), quiet = False)
+    res = decode_signal(*modulation(5, 10, string2bin('hi'), quiet = False), quiet = True)
     print(res)
     print(bin2string(res))
     
-    '''
+    
     # sending signals to multiple clients
     alphabet = 'abcdefghijklmnopqrstuwxyz '
     client_list = list(range(1,10))
@@ -303,9 +303,9 @@ if __name__ == '__main__':
     for i in client_list:
         print('client id %d decoding signal'%i)
         res = decode_signal(y, t, client_id = i, client_window_width = 5, 
-                    client_num = len(client_list), quiet = True)
+                    client_num = len(client_list), quiet = False)
         print('decoded signal : %s'%bin2string(res))
-    '''
+    
     
     
     
